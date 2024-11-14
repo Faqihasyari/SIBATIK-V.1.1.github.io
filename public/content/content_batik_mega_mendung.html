@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web SiBatik</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo_sibatik2.png" >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-white dark:bg-colordark overflow-x-hidden dark:overflow-x-hidden">
+    <section class="fixed flex-auto top-0 left-0 w-full bg-white dark:bg-colordark shadow-sm z-50">
+        <nav class="container mx-auto flex justify-between items-center py-2 md:py-0">
+            <a href="#" class="w-24 h-24">
+                <img src="../assets/images/LogofullSibatik.png" alt="Logo" class="animate-slide-in-left slide-in-left">
+            </a>
+            
+            <ul id="menu" class="hidden md:flex space-x-10 ml-auto font-inter animate-slide-in-right dark:text-white">
+                <li ><a class="hover:underline underline font-bold" href="../index.html">Home</a></li>
+                <li><a href="../pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
+                <li><a href="../pages/alat_bahan_page.html" class="hover:underline">Alat & Bahan</a></li>
+                <li><a class="hover:underline">Inovasi</a></li>
+                <li><a href="../pages/about_page.html" class="hover:underline ">About</a></li>
+                
+            </ul>
+            <div class="justify-evenly flex items-center space-x-4 ml-7">
+                <label class="inline-flex items-center relative" for="darkmode">
+                    <input class="peer hidden" id="darkmode" type="checkbox" />
+                    <div
+                      class="relative w-[72px] h-[32px] bg-white peer-checked:bg-zinc-500 rounded-full after:absolute after:content-[''] after:w-[28px] after:h-[28px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[2px] after:left-[2px] active:after:w-[36px] peer-checked:after:left-[66px] peer-checked:after:translate-x-[-100%] shadow-sm duration-300 after:duration-300 after:shadow-md"
+                    ></div>
+                    <svg
+                      height="0"
+                      width="100"
+                      viewBox="0 0 24 24"
+                      data-name="Layer 1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-white peer-checked:opacity-60 absolute w-5 h-5 left-[9px]"
+                    >
+                      <path
+                        d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5ZM13,0h-2V5h2V0Zm0,19h-2v5h2v-5ZM5,11H0v2H5v-2Zm19,0h-5v2h5v-2Zm-2.81-6.78l-1.41-1.41-3.54,3.54,1.41,1.41,3.54-3.54ZM7.76,17.66l-1.41-1.41-3.54,3.54,1.41,1.41,3.54-3.54Zm0-11.31l-3.54-3.54-1.41,1.41,3.54,3.54,1.41-1.41Zm13.44,13.44l-3.54-3.54-1.41,1.41,3.54,3.54,1.41-1.41Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      height="512"
+                      width="512"
+                      viewBox="0 0 24 24"
+                      data-name="Layer 1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-black opacity-60 peer-checked:opacity-70 peer-checked:fill-white absolute w-5 h-5 right-[9px]"
+                    >
+                      <path
+                        d="M12.009,24A12.067,12.067,0,0,1,.075,10.725,12.121,12.121,0,0,1,10.1.152a13,13,0,0,1,5.03.206,2.5,2.5,0,0,1,1.8,1.8,2.47,2.47,0,0,1-.7,2.425c-4.559,4.168-4.165,10.645.807,14.412h0a2.5,2.5,0,0,1-.7,4.319A13.875,13.875,0,0,1,12.009,24Zm.074-22a10.776,10.776,0,0,0-1.675.127,10.1,10.1,0,0,0-8.344,8.8A9.928,9.928,0,0,0,4.581,18.7a10.473,10.473,0,0,0,11.093,2.734.5.5,0,0,0,.138-.856h0C9.883,16.1,9.417,8.087,14.865,3.124a.459.459,0,0,0,.127-.465.491.491,0,0,0-.356-.362A10.68,10.68,0,0,0,12.083,2ZM20.5,12a1,1,0,0,1-.97-.757l-.358-1.43L17.74,9.428a1,1,0,0,1,.035-1.94l1.4-.325.351-1.406a1,1,0,0,1,1.94,0l.355,1.418,1.418.355a1,1,0,0,1,0,1.94l-1.418.355-.355,1.418A1,1,0,0,1,20.5,12ZM16,14a1,1,0,0,0,2,0A1,1,0,0,0,16,14Zm6,4a1,1,0,0,0,2,0A1,1,0,0,0,22,18Z"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div class="flex items-center md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none mr-3">
+                        <img src="../assets/images/menu.png" alt="Menu" class="h-6">
+                        <img src="../assets/images/interface.png" alt="Menu" class="h-6 hidden dark:block">
+
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <script src="../darkMode.js"></script>
+        
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="flex flex-col space-y-2 p-4 bg-white dark:bg-colordark dark:text-white  shadow-md da ">
+                <li><a class="hover:underline underline font-bold" href="../index.html">Home</a></li>
+                <li><a href="../pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
+                <li><a href="../pages/alat_bahan_page.html" class="hover:underline">Alat & Bahan</a></li>
+                <li><a class="hover:underline">Inovasi</a></li>
+                <li><a href="../pages/about_page.html" class="hover:underline ">About</a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="../responsive.js"></script>
+    <section class="mt-32">
+        <div>
+            <div class="px-4 sm:px-8 md:pl-36 pb-2">
+                <h2 class="text-blue-800 pb-2 dark:text-sibatik" >
+                    Sunday , 4 Oct 2024
+                </h2>
+                <h1 class="text-4xl font-bold dark:text-white">
+                    Motif Batik Mega Mendung
+                </h1>
+                
+            </div>
+            <div class="j">
+                <img src="../assets/images/MegaMendung-upscaler.jpg" alt="" class="  w-full h-auto lg:max-w-[1152px] lg:max-h-[426px] lg: object-cover mx-auto">
+                <div class="container px-4 sm:px-8 md:px-36 pt-8 lg:text-[18px] md:text-[16px]">
+                    <p class="max-w-full text-justify text-custom dark:text-fontdark ">
+                        Motif megamendung sebagai motif dasar batik sudah dikenal luas sampai ke manca negara. Sebagai bukti ketenarannya, motif megamendung pernah  dijadikan cover sebuah buku batik terbitan luar negeri yang berjudul Batik Design, karya seorang berkebangsaan Belanda bernama Pepin van Roojen. Kekhasan motif megamendung tidak saja pada  motifnya yang berupa gambar menyerupai awan dengan warna-warna tegas,  tetapi juga nilai-nilai filosofi yang terkandung di dalam motifnya. Hal  ini berkaitan erat dengan sejarah lahirnya batik secara keseluruhan di  Cirebon. H. Komarudin Kudiya S.IP, M.Ds, Ketua Harian Yayasan Batik Jawa Barat (YBJB) menyatakan bahwa:
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Motif megamendung merupakan wujud karya yang sangat luhur dan penuh makna, sehingga penggunaan motif  megamendung sebaiknya dijaga dengan baik dan ditempatkan sebagaimana  mestinya. Pernyataan ini tidak bermaksud membatasi bagaimana motif  megamendung diproduksi, tapi lebih kepada ketidaksetujuan penggunaan  motif megamendung untuk barang-barang yang sebenarnya kurang pantas,  seperti misalnya pelapis sandal di hotel-hotel.
+                    </p>
+                    <h1 class="lg:text-[22px] md:text-[18px] font-bold pt-2 dark:text-white">
+                        Sejarah
+                    </h1>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Sejarah timbulnya motif megamendung berdasarkan buku dan literatur yang  ada selalu mengarah pada sejarah kedatangan bangsa Tionghoa ke wilayah  Cirebon. Hal ini tidak mengherankan karena pelabuhan Muara Jati di  Cirebon merupakan tempat persinggahan para pendatang dari dalam dan luar negeri. Tercatat jelas dalam sejarah, bahwa Sunan Gunung Jati yang  menyebarkan agama Islam di wilayah Cirebon pada abad ke-16, menikahi  Ratu Ong Tien dari China. Beberapa benda seni yang dibawa dari China  seperti keramik, piring dan kain berhiaskan bentuk awan.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Dalam paham Taoisme, bentuk awan melambangkan dunia atas. Bentuk awan  merupakan gambaran dunia luas, bebas dan mempunyai makna transidental  (Ketuhanan). Konsep mengenai awan juga berpengaruh di dunia kesenirupaan Islam pada abad ke-16, yang digunakan kaum Sufi untuk ungkapan dunia  besar atau alam bebas.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Pernikahan Sunan Gunung Jati dengan Ratu Ong Tien menjadi pintu gerbang  masuknya budaya dan tradisi China ke keraton Cirebon. Para pembatik  keraton menuangkan budaya dan tradisi China ke dalam motif batik yang  mereka buat, tetapi dengan sentuhan khas Cirebon, jadi ada perbedaan  antara motif megamendung dari China dan yang dari Cirebon. Misalnya,  pada motif megamendung China, garis awan berupa bulatan atau lingkaran,  sedangkan yang dari Cirebon, garis awan, lancip dan segitiga
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Sejarah batik di Cirebon juga terkait dengan perkembangan gerakan  tarekat yang konon berpusat di Banjarmasin, Kalimantan Selatan. Membatik pada awalnya dikerjakan oleh anggota tarekat yang mengabdi di keraton  sebagai sumber ekonomi untuk membiayai kelompok tarekat tersebut. Para  pengikut tarekat tinggal di desa Trusmi dan sekitarnya. Desa ini  terletak kira-kira 4 km dari Cirebon menuju ke arah barat daya atau  menuju ke arah Bandung. Oleh karena itu, sampai sekarng batik Cirebon  identik dengan batik Trusmi.
+                    </p>
+                    <h1 class="lg:text-[22px] md:text-[18px] font-bold pt-2 dark:text-white">
+                    Filosofi
+                    </h1>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Dilansir dari ebook Kode-kode Nusantara karya Hokky Situngkir, Mega Mendung menggambarkan awan-awan tebal di cuaca yang mendung. Dalam hal ini, motif batik Mega Mendung melambangkan pemberian harapan  akan turunnya hujan yang penting untuk menyuburkan pertanian.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Sementara dalam budaya  Cina, motif awan bermakna nirwana sebagai dunia yang sangat besar,  abadi, bebas. Selain itu, motif awan juga bermakna konsep ketuhanan.Senada, awan juga direpresentasikan oleh kaum Sufi (orang-orang yang mendalami ilmu tasawuf) sebagai konsep luas dan bebas.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Melukis Mega Mendung  klasik memberikan kesan adanya pengulangan pola-pola yang serupa (seolah tak peduli pada skalanya). Pada bentuk pola awan yang besar juga  tergambar pola serupa lengkung awan yang lebih kecil.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Jadi secara  keseluruhan, motif ini menggambarkan awan yang berarak tebal. Di mana,  pola penempatan awan-awan dalam lukisan Mega Mendung bisa dijadikan  sebagai fungsi transformasi dua dimensi.Nah, itu tadi informasi seputar sejarah batik Mega Mendung khas Cirebon lengkap dengan makna dan filosofinya
+                    </p>
+                    <h1 class="lg:text-[22px] md:text-[18px] font-bold pt-2 dark:text-white">
+                        Unsur rancangan
+                    </h1>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Motif megamendung yang pada awalnya selalu berunsurkan warna biru  diselingi warna merah menggambarkan maskulinitas dan suasana dinamis,  karena dalam proses pembuatannya ada campur tangan laki-laki. Kaum  laki-laki anggota tarekatlah yang pada awalnya merintis tradisi batik.  Warna biru dan merah tua juga menggambarkan psikologi masyarakat pesisir yang lugas, terbuka dan egaliter.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Selain itu, warna biru juga disebut-sebut melambangkan warna langit yang luas, bersahabat dan tenang serta melambangkan pembawa hujan yang  dinanti-nantikan sebagai pembawa kesuburan dan pemberi kehidupan. Warna  biru yang digunakan mulai dari warna biru muda sampai dengan warna biru  tua. Biru muda menggambarkan makin cerahnya kehidupan dan biru tua  menggambarkan awan gelap yang mengandung air hujan dan memberi  kehidupan.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Dalam perkembangannya, motif megamendung mengalami banyak perkembangan  dan dimodifikasi sesuai permintaan pasar. Motif megamendung dikombinasi  dengan motif hewan, bunga atau motif lain. Sesungguhnya penggabungan  motif seperti ini sudah dilakukan oleh para pembatik tradisional sejak  dulu, namun perkembangannya menjadi sangat pesat dengan adanya campur  tangan dari para perancang busana. Selain motif, warna motif megamendung yang awalnya biru dan merah,  sekarang berkembang menjadi berbagai macam warna. Ada motif megamendung  yang berwarna kuning, hijau, coklat dan lain-lain.
+                    </p>
+                    <h1 class="lg:text-[22px] md:text-[18px] font-bold pt-2 dark:text-white">
+                        Proses Produksi
+                    </h1>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Proses produksinya yang dahulu dikerjakan secara batik tulis dan batik cap, dengan pertimbangan ekonomis diproduksi secara besar-besaran dengan  cara disablon (printing) di pabrik-pabrik. Walaupun kain bermotif  megamendung yang dihasilkan dengan proses seperti ini sebenarnya tidak  bisa disebut dengan batik.
+                    </p>
+                    <p class="max-w-full text-justify pt-2 text-custom dark:text-fontdark">
+                        Wujud motif megamendungpun yang dulunya hanya dikenal dalam wujud kain  batik, sekarang bisa ditemui dalam berbagai macam bentuk barang. Ada  yang berupa hiasan dinding lukisan kaca, produk-produk interior seperti ukiran kayu maupun produk-produk  peralatan rumah tangga seperti sarung bantal, sprei, taplak meja dan  lain-lain.
+                    </p>
+                    <div class="py-11 flex flex-col items-center">
+                        <h1 class="font-bold lg:text-xl sm:text-xs pb-5 dark:text-white">
+                            Hubungi kami jika anda berminat
+                        </h1>
+                        <a href="https://wa.me/6285798319409?">
+                            <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
+                            border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+                            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+                            Beli Sekarang
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

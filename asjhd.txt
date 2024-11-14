@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Web SiBatik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white overflow-y-auto">
+    <section class="space-x-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="w-24 h-24">
+                <img src="../assets/images/LogofullSibatik.png" alt="Logo" class="">
+            </a>
+            <ul class="flex space-x-10 ml-auto">
+                <li><a class="underline font-bold">Home</a></li>
+                <li><a>Jenis-jenis Batik</a></li>
+                <li><a>Alat & Bahan</a></li>
+                <li><a>Inovasi</a></li>
+                <li><a>About</a></li>
+                <li><img src="../assets/images/Toggle Mode.png" class="h-6"></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="swiper mySwiper mt-3 relative">
+        <div class="swiper-wrapper max-h-[550px] space-x-4">
+            <div class="swiper-slide">
+                <img src="../assets/images/MegaMendung.jpg" class="w-full h-full rounded" alt="Motif Mega Mendung">
+                <div class="absolute bottom-4 left-2 p-5">
+                    <h1 class="text-white text-xl font-bold">Motif Batik Mega Mendung</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/MegaMendung.jpg" class="w-full h-full rounded" alt="Motif Mega Mendung">
+                <div class="absolute bottom-4 left-2 p-5">
+                    <h1 class="text-white text-xl font-bold">Motif Batik Mega Mendung</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/MegaMendung.jpg" class="w-full h-full rounded" alt="Motif Mega Mendung">
+                <div class="absolute bottom-4 left-2 p-5">
+                    <h1 class="text-white text-xl font-bold">Motif Batik Mega Mendung</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination absolute bottom-2 w-full"></div>
+    </div>
+
+    <section>
+        <h1 class="font-bold text-lg ml-9 pt-8 pb-8">
+            Batik paling populer di Cirebon
+        </h1>
+        <div class="container ml-9">
+            <a href="#" class="block">
+                <div class="w-[592px] h-[226px] bg-slate-300"></div>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet <br>
+                    consectetur adipisicing elit. Ullam, repellendus quo<br>
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

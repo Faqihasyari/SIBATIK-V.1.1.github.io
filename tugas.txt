@@ -1,0 +1,66 @@
+*Membuat slide kedua dari jenis-jenis batik, alat dan baha, dan homepage
+*membuat dark Mode
+*responsive
+*inovasi page
+*detail penjelasan dari setiap konten
+////
+<div class="flex justify-center" >
+            <img src="../assets/images/contoh about-unsplash.jpg" class="w-[1216px] h-[556px] object-cover">
+        </div>
+    </header>
+    <div class="ml-[112px] " data-aos="fade-up">
+        <div>
+        <h1 class="font-bold text-[24px] pt-8">
+            About SiBatik
+        </h1>
+        <p class="text-[16px] pt-4">
+            SiBatik adalah sebuah inisiatif yang lahir dari program MBKM Wirausaha Merdeka Universitas Gadjah Mada yang bertujuan untuk mempromosikan dan <br>
+            melestarikan batik khas Cirebon kepada masyarakat luas, baik di tingkat nasional maupun internasional. Melalui platform ini, kami memperkenalkan kekayaan <br>
+            budaya batik Cirebon sekaligus mendukung pemberdayaan ekonomi para pengrajin lokal.<br>
+        </p>
+        <p class="text-[16px] pt-4">
+            Sebagai bagian dari program MBKM Wirausaha Merdeka, SIBATIK memberikan kesempatan kepada mahasiswa untuk mengembangkan keterampilan wirausaha,<br>
+            khususnya dalam bidang ekonomi kreatif berbasis budaya. Kami berupaya menjembatani kesenian tradisional dengan dunia digital, agar batik Cirebon dapat <br>
+            dikenal dan diapresiasi oleh berbagai kalangan.
+        </p>
+        <h1 class="font-bold text-[24px] pt-8">
+            Mengapa Sibatik Didirikan
+        </h1>
+        <p class="text-[16px] pt-4">
+            SiBatik didirikan sebagai wujud kepedulian terhadap keberlanjutan seni batik Cirebon di tengah arus modernisasi dan globalisasi. Kami percaya bahwa dengan <br>
+            memanfaatkan teknologi digital, seni batik bisa terus bertahan dan bahkan berkembang di pasar internasional. Tujuan utama kami adalah memperkenalkan <br>
+            keindahan dan filosofi di balik batik Cirebon kepada dunia, sekaligus memberikan platform bagi para pengrajin lokal untuk memasarkan karya mereka secara <br>
+            lebih luas.
+        </p>
+        <p class="text-[16px] pt-4">
+            Melalui SiBatik, kami ingin menjadi penghubung antara para pengrajin, pencinta batik, dan konsumen yang menghargai seni budaya. Kami berharap upaya ini <br>
+            dapat membantu menjaga kelangsungan hidup pengrajin batik tradisional dan mengangkat nilai ekonomi serta seni batik Cirebon.
+        </p>
+        <h1 class="font-bold text-[24px] pt-8">
+            Tujuan utama SiBatik
+        </h1>
+        <ul class="list-disc text-[16px] pt-4 pl-3">
+            <li>
+                Meningkatkan kesadaran akan keunikan dan nilai budaya batik Cirebon, baik di dalam maupun di luar negeri.
+            </li>
+            <li>
+                Memperluas akses pasar bagi batik Cirebon, sehingga dapat dikenal oleh masyarakat internasional.
+            </li>
+            <li>
+                Mendukung keberlanjutan industri batik lokal dengan membuka peluang pemasaran digital yang lebih luas.
+            </li>
+            <li>
+                Membantu pengrajin lokal meningkatkan keterampilan dan penghasilan melalui inovasi dan pemasaran digital.
+            </li>
+            <li>
+                Mengembangkan jiwa kewirausahaan mahasiswa melalui pengalaman nyata dalam mengelola bisnis kreatif berbasis budaya.
+            </li>
+        </ul>
+        </div>
+        <div>
+        
+        </div>
+        <div>
+        
+        </div>
+    </div>
