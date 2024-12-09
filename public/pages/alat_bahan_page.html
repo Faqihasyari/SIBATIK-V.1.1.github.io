@@ -11,19 +11,20 @@
     <link rel="icon" type="image/png" href="../assets/images/logo_sibatik2.png" >
     <title> SiBatik</title>
 </head>
-<body class="bg-white dark:bg-colordark">
+<body class="bg-white dark:bg-colordark overflow-x-hidden dark:overflow-x-hidden">
     <header class=" space-x-4 font-inter ">
         <section class="fixed flex-auto top-0 left-0 w-full bg-white dark:bg-colordark shadow-sm z-50">
             <nav class="container mx-auto flex justify-between items-center py-2 md:py-0">
-                <a href="#" class="w-24 h-24">
-                    <img src="../assets/images/LogofullSibatik.png" alt="Logo" class="animate-slide-in-left slide-in-left">
+                <a href="../pages/alat_bahan_page.html" class="w-24 h-24">
+                    <img src="../assets/images/LogofullSibatik.png" alt="Logo" class="animate-slide-in-left dark:hidden slide-in-left">
+                    <img src="../assets/images/logo dark mode.png" alt="Menu" class="animate-slide-in-left hidden dark:block">
                 </a>
                 
-                <ul id="menu" class="hidden md:flex space-x-10 ml-auto font-inter animate-slide-in-right dark:text-white">
-                    <li ><a class="hover:underline " href="../index.html">Home</a></li>
+                <ul id="menu" class="hidden lg:flex space-x-10 ml-auto font-inter animate-slide-in-right dark:text-white">
+                    <li ><a class="hover:underline " href="/index.html">Home</a></li>
                     <li><a href="../pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
                     <li><a href="../pages/alat_bahan_page.html" class="hover:underline underline font-bold">Alat & Bahan</a></li>
-                    <li><a class="hover:underline">Inovasi</a></li>
+                    <li><a href="../pages/inovasi.html" class="hover:underline">Inovasi & Pelatihan</a></li>
                     <li><a href="../pages/about_page.html" class="hover:underline ">About</a></li>
                     
                 </ul>
@@ -60,12 +61,10 @@
                           ></path>
                         </svg>
                       </label>
-                      <div class="flex items-center md:hidden">
+                      <div class="flex items-center lg:hidden">
                         <button id="menu-toggle" class="focus:outline-none mr-3">
                             <img src="../assets/images/menu.png" alt="Menu" class="h-6 dark:hidden">
                             <img src="../assets/images/list_16024404.png" alt="Menu" class="h-6 hidden dark:block">
-
-
                         </button>
                     </div>
                 </div>
@@ -74,53 +73,69 @@
             
         
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden">
-                <ul class="flex flex-col space-y-2 p-4 bg-white dark:bg-colordark dark:text-white  shadow-md da ">
-                    <li><a class="hover:underline" href="../index.html">Home</a></li>
-                    <li><a href="../pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
-                    <li><a href="../pages/alat_bahan_page.html" class="hover:underline underline font-bold">Alat & Bahan</a></li>
-                    <li><a class="hover:underline">Inovasi</a></li>
-                    <li><a href="../pages/about_page.html" class="hover:underline">About</a></li>
-                    
-                </ul>
+            <div id="mobile-menu" class="sticky top-0 hidden lg:hidden z-50">
+              <ul class="flex flex-col space-y-2 p-4 bg-white dark:bg-colordark dark:text-white shadow-md">
+                  <li><a class="hover:underline " href="/index.html">Home</a></li>
+                  <li><a href="../pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
+                  <li><a href="../pages/alat_bahan_page.html" class="hover:underline  font-bold">Alat & Bahan</a></li>
+                  <li><a href="../pages/inovasi.html" class="hover:underline">Inovasi & Pelatihan</a></li>
+                  <li><a href="../pages/about_page.html" class="hover:underline">About</a></li>
+              </ul>
             </div>
         </section>
         <script src="../responsive.js"></script>
-    <div class="relative w-full pr-20 pl-12 mt-32">
-        <input type="text" class="w-full p-2 pl-10 text-sm border border-gray-300 rounded-lg focus:ring-indigo-100 focus:border-indigo-100" placeholder="Search...">
-        <div class="absolute inset-y-0 left-0 flex items-center pl-14  pointer-events-none">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-            
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 10a6 6 0 1112 0 6 6 0 01-12 0z" />
-            </svg>
-        </div>
-    </div>
+    
     <section>
-        <div class="dark:text-white">
-            <ul class="flex lg:flex-row  space-x-10 pl-20 pt-5">
-                <div class="font-bold text-[12px] underline filter-btn hover:underline" data-filter="All">All</div>
-                <div class="text-[12px] filter-btn hover:underline" data-filter="Canting">Canting</div>
-                <div class="text-[12px] filter-btn hover:underline" data-filter="Alat pemanas">Alat pemanas</div>
-                <div class="text-[12px] filter-btn hover:underline" data-filter="Kain">Kain</div>
-                <div class="text-[12px] filter-btn hover:underline" data-filter="Pewarna">Pewarna</div>
-                <div class="text-[12px] filter-btn hover:underline" data-filter="Alat penopang">Alat penopang</div>
+      <div class="dark:text-white mt-32">
+        <div class="block lg:hidden relative">
+            <button
+                id="dropdownButton"
+                class="bg-gray-200 dark:bg-gray-700 text-black dark:text-white px-4 py-2 rounded-md w-1/3 text-left"
+                onclick="toggleDropdown()"
+            >
+                Pilih Kategori
+            </button>
+            <ul
+                id="dropdownMenu"
+                class="hidden absolute bg-white dark:bg-gray-800 text-black dark:text-white w-1/3 mt-1 rounded-md shadow-lg z-10"
+            >
+                <li class="font-bold text-[12px] px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 filter-btn" data-filter="All" onclick="selectCategory(this)">All</li>
+                <li class="text-[12px] px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 filter-btn" data-filter="Canting" onclick="selectCategory(this)">Canting</li>
+                <li class="text-[12px] px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 filter-btn" data-filter="Alat pemanas" onclick="selectCategory(this)">Alat pemanas</li>
+                <li class="text-[12px] px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 filter-btn" data-filter="Kain" onclick="selectCategory(this)">Kain</li>
+                <li class="text-[12px] px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 filter-btn" data-filter="Pewarna" onclick="selectCategory(this)">Pewarna</li>
+                <li class="text-[12px] px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 filter-btn" data-filter="Alat penopang" onclick="selectCategory(this)">Alat penopang</li>
+                <li class="text-[12px] px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 filter-btn" data-filter="Paket" onclick="selectCategory(this)">Paket membatik</li>
             </ul>
         </div>
-        <div class="dark:text-white">
-            <div class=" pt-7 flex flex-col items-center sm:flex-row sm:space-x-5 sm:space-y-0 space-y-5 justify-center">
-                <div class="container w-[310px] h-[486px] flex flex-col border-b-2 " data-category="Alat pemanas">
+    
+        <!-- List untuk Laptop -->
+        <ul class="hidden lg:flex flex-row space-x-10 pl-20 pt-5">
+            <li class="font-bold text-[12px] underline filter-btn hover:underline" data-filter="All">All</li>
+            <li class="text-[12px] filter-btn hover:underline" data-filter="Canting">Canting</li>
+            <li class="text-[12px] filter-btn hover:underline" data-filter="Alat pemanas">Alat pemanas</li>
+            <li class="text-[12px] filter-btn hover:underline" data-filter="Kain">Kain</li>
+            <li class="text-[12px] filter-btn hover:underline" data-filter="Pewarna">Pewarna</li>
+            <li class="text-[12px] filter-btn hover:underline" data-filter="Alat penopang">Alat penopang</li>
+            <li class="text-[12px] filter-btn hover:underline" data-filter="Paket">Paket membatik</li>
+        </ul>
+    </div>
+    
+        <script src="../dropButton.js"></script>
+        </div>
+        
+        <div class="dark:text-white  ">
+          <div class="pt-7 flex flex-col items-center justify-center space-y-5 sm:space-x-5 sm:space-y-0 sm:flex-wrap md:flex-row md:space-x-5 md:space-y-5">
+                <a href="../content/anglo.html">
+              <div class="container w-[310px] h-[486px] flex flex-col mt-5 border-b-2 dark:border-ring" data-category="Alat pemanas">
                     <div class="group">
-                    <img src="../assets/images/anglo.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/kompor.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
-                        Anglo
+                        Kompor
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Anglo adalah perapian kecil yang terbuat dari
-                        tanah liat atau logam, di mana bara api atau 
-                        minyak digunakan sebagai
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Kompor Membatik Canting adalah alat pemanas yang digunakan untuk menjaga suhu malam (lilin batik)
                     </p>
                     <div class="pt-6">
                         <span class="bg-purple-100 hover:bg-purple-300 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
@@ -128,15 +143,17 @@
                         </span>
                     </div>
                 </div>
-                <div class="container w-[310px] h-[486px] flex flex-col border-b-2" data-category="Alat pemanas">
+              </a>
+              <a href="../content/wajan.html">
+                <div class="container w-[310px] h-[486px] flex flex-col border-b-2 dark:border-ring" data-category="Alat pemanas">
                     <div class="group">
-                    <img src="../assets/images/wajan.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/wajanreal.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
                         Wajan
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Wajan berfungsi sebagai tempat untuk melelehkan malam (lilin). Malam harus dilelehkan terlebih dahulu agar bisa digunakan
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Wajan membatik adalah alat tradisional yang digunakan dalam proses membatik untuk mencairkan lilin batik atau malam. Wajan ini memiliki peran penting dalam seni membatik karena memastikan malam mencair dengan konsistensi yang tepat untuk diaplikasikan pada kain.
                     </p>
                     <div class="pt-6">
                         <span class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
@@ -144,15 +161,17 @@
                         </span>
                     </div>
                 </div>
-                <div class="container w-[310px] h-[486px] flex flex-col border-b-2" data-category="Canting">
+              </a>
+              <a href="../content/canting.html">
+                <div class="container w-[310px] h-[486px] flex flex-col border-b-2 dark:border-ring" data-category="Canting">
                     <div class="group">
-                    <img src="../assets/images/produksi-canting-di-rumah-amat-catari-67-salah-satu-perajin-canting-tertua-di-kota-pekalongan-foto-diambil-selasa-2792022-7_169.jpeg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/canting.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
                         Canting
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Canting adalah alat utama yang digunakan untuk menorehkan lilin malam ke kain. Canting memiliki bagian berupa tangkai kayu untuk.....
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Canting membatik adalah alat khas yang digunakan untuk mengambil dan mengaplikasikan malam (lilin batik) ke kain. Alat ini menjadi inti dari proses membatik tulis, memungkinkan pengrajin menciptakan pola-pola indah dengan presisi tinggi.
                     </p>
                     <div class="pt-6 ">
                         <span class="bg-purple-100 hover:bg-purple-300 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
@@ -160,15 +179,17 @@
                         </span>
                     </div>
                 </div>
-                <div class="container w-[310px] h-[486px] flex flex-col border-b-2" data-category="Pewarna">
+              </a>
+              <a href="../content/pewarnaBatik.html">
+                <div class="container w-[310px] h-[486px] flex flex-col border-b-2 dark:border-ring" data-category="Pewarna">
                     <div class="group">
-                    <img src="../assets/images/pewarna batik.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/pewarnabatik.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
                         Pewarna batik
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Zat pewarna khusus untuk kain batik. Pewarna dapat berupa pewarna alami (misalnya dari tumbuhan) atau sintetis.
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Pewarna Batik adalah bahan yang digunakan dalam proses pewarnaan kain batik setelah pola lilin (malam) diterapkan. Pewarna ini memainkan peran penting dalam memberikan warna, estetika, dan karakter pada kain batik.
                     </p>
                     <div class="pt-6">
                         <span class="bg-purple-100 hover:bg-purple-300 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
@@ -177,17 +198,19 @@
                         
                     </div>
                 </div>
+              </a>
             </div>
-            <div class=" pt-7 flex flex-col items-center sm:flex-row sm:space-x-5 sm:space-y-0 space-y-5 justify-center">
-                <div class="container w-[310px] h-[486px] flex flex-col" data-category="Kain">
+            <div class=" pt-7 flex flex-wrap items-center justify-center sm:space-x-5 sm:space-y-0 space-y-5">
+              <a href="../content/kain.html">
+              <div class="container w-[310px] h-[486px] border-b-2 flex flex-col dark:border-ring" data-category="Kain">
                     <div class="group ">
-                    <img src="../assets/images/Kain-Mori-Batik-004.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/kain_mori.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
                         Kain mori
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Kain mori merupakan media yang digunakan untuk membatik. Biasanya terbuat dari katun yang memiliki serat halus,
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Kain Mori untuk Membatik adalah bahan dasar yang digunakan untuk membuat batik. Kain ini sangat penting dalam menentukan hasil akhir dari proses membatik, karena sifat kain yang menyerap pewarna dengan baik dan memberikan kenyamanan saat digunakan.
                     </p>
                     <div class="pt-6">
                         <span class="bg-purple-100 hover:bg-purple-300 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
@@ -195,30 +218,34 @@
                         </span>
                     </div>
                 </div>
-                <div class="container w-[310px] h-[486px] flex flex-col" data-category="Alat penopang">
+              </a>
+              <a href="../content/gawangan.html">
+                <div class="container w-[310px] h-[486px] border-b-2 flex flex-col dark:border-ring" data-category="Alat penopang">
                     <div class="group">
-                    <img src="../assets/images/gawangan.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/ganco.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
                         Gawangan
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Gawangan adalah penyangga untuk menggantung kain saat proses membatik. Gawangan terbuat dari kayu atau bambu dan 
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Gawangan untuk Membatik adalah alat yang digunakan dalam proses membatik untuk menggantung dan merentangkan kain yang akan dibatik. Gawangan memainkan peran penting dalam memastikan kain tetap terjaga dalam posisi yang tepat selama proses pembatikan, serta memudahkan pengrajin untuk mengerjakan pola batik dengan lebih efisien.
                     <div class="pt-6">
                         <span class="bg-purple-100 hover:bg-purple-300 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
                             Alat penopang
                         </span>
                     </div>
                 </div>
-                <div class="container w-[310px] h-[486px] flex flex-col" data-category="Pewarna">
+              </a>
+              <a href="../content/malam.html">
+                <div class="container w-[310px] h-[486px] border-b-2 flex flex-col dark:border-ring" data-category="Pewarna">
                     <div class="group ">
-                    <img src="../assets/images/_lilin_malam_batik_klowong bk.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/malam.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
                         Malam(lilin)
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Malam adalah lilin khusus yang digunakan untuk menutupi bagian-bagian kain yang tidak ingin terkena pewarna
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Malam (Lilin) untuk Membatik adalah bahan utama yang digunakan dalam proses pembuatan batik. Malam, yang berupa lilin batik, berfungsi untuk menutupi bagian kain agar tidak terkena pewarna pada saat proses pewarnaan dilakukan.
                     </p>
                     <div class="pt-6">
                         <span class="bg-purple-100 hover:bg-purple-300 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
@@ -226,15 +253,17 @@
                         </span>
                     </div>
                 </div>
-                <div class="container w-[310px] h-[486px] flex flex-col" data-category="Pewarna">
+              </a>
+              <a href="../content/sodaAbu.html">
+                <div class="container w-[310px] h-[486px] border-b-2 flex flex-col dark:border-ring" data-category="Pewarna">
                     <div class="group">
-                    <img src="../assets/images/20160917-134145_fit-1474094505_garam_merah_b.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
+                    <img src="../assets/images/soda abu.jpg" class="h-[280px] w-[310px] rounded-t-md object-cover group-hover:scale-105 transition-all duration-300">
                     </div>
                     <h1 class="text-[18px] font-bold pt-7 pb-3 hover:underline">
-                        Garam Diazonium
+                        Soda Abu
                     </h1>
-                    <p class="max-w-full text-custom dark:text-fontdark">
-                        Garam Diazonium digunakan untuk mengunci warna pewarna di kain, terutama dalam pewarnaan sintetis.
+                    <p class="max-w-full line-clamp-3 text-custom dark:text-fontdark">
+                      Soda abu, atau yang dikenal secara kimiawi sebagai natrium karbonat (Na₂CO₃), adalah senyawa alkali yang sering digunakan dalam proses membatik. Bahan ini berbentuk serbuk putih dan larut dalam air, menghasilkan larutan basa yang membantu berbagai proses kimia dalam membatik. Soda abu berperan penting dalam mempersiapkan kain untuk penyerapan warna dan menjaga kualitas hasil batik.
                     </p>
                     <div class="pt-6">
                         <span class="bg-purple-100 hover:bg-purple-300 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
@@ -243,8 +272,163 @@
                         
                     </div>
                 </div>
+              </a>
                 
             </div>
+            
+            <div class="max-w-screen-xl container px-4 ml-0 py-8 sm:px-6 sm:py-20 lg:px-28 lg:py-0" data-category="Paket" >
+              <div class="flex flex-col">
+              <h1 class="text-2xl font-bold mt-28  mb-6 no-filter"  >Paket lengkap membatik</h1>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8 " >
+                  <div class=" divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm"  data-aos="fade-right">
+                    <div class="p-6 sm:px-8 dark:text-white ">
+                      <h2 class="text-lg font-medium text-gray-900 dark:text-white">
+                        Paket Studio Batik
+                        <span class="sr-only">Plan</span>
+                      </h2>
+                      <img src="../assets/images/ALAT dan BAHAN.png" class="rounded" alt="">
+                      <p class="mt-2 text-gray-700 dark:text-white">Paketan untuk membuat sebuah batik canting. Untuk harga bisa di nego</p>
+                      <p class="mt-2 sm:mt-4">
+                        <strong class="text-3xl font-bold text-gray-900 sm:text-4xl dark:text-white"> 1??.000 IDR </strong>
+                        <span class="text-sm font-medium text-gray-700 dark:text-white" >/paket</span>
+                      </p>
+                      <a
+                        class="mt-4  block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                        href="https://wa.me/62882001102369?"
+                      >
+                        Beli Sekarang
+                      </a>
+                    </div>
+              
+                    <div class="p-6 sm:px-8">
+                      <p class="text-lg font-medium text-gray-900 sm:text-xl dark:text-white">Paket sudah termasuk:</p>
+              
+                      <ul class="mt-2 space-y-2 sm:mt-4">
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Gawangan </span>
+                        </li>
+              
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Soda Abu </span>
+                        </li>
+              
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Kompor </span>
+                        </li>
+              
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Wajan </span>
+                        </li>
+              
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Malam(lilin) </span>
+                        </li>
+              
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Canting </span>
+                        </li>
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Kain mori </span>
+                        </li>
+                        <li class="flex items-center gap-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 text-indigo-700"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+              
+                          <span class="text-gray-700 dark:text-white"> Pewarna </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  
+                </div>
+              </div>
+              </div>
             <div class="pt-12 px-20">
                 <div class="pt-12 px-20 ">
                     <div class="flex items-center justify-between border-t border-gray-200 bg-white dark:bg-colordark px-4 py-3 sm:px-6 pt-4">
@@ -258,9 +442,9 @@
                             Showing
                             <span class="font-medium">1</span>
                             to
-                            <span class="font-medium">3</span>
+                            <span class="font-medium">1</span>
                             of
-                            <span class="font-medium">3</span>
+                            <span class="font-medium">1</span>
                             results
                             </p>
                         </div>
@@ -274,8 +458,7 @@
                             </a>
                             <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
                             <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 dark:bg-colorpagination px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
-                            <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-white dark:hover:bg-pagination text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
-                            <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold dark:text-white dark:hover:bg-pagination text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+                            
                             <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
                                 <span class="sr-only">Next</span>
                                 <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
@@ -286,24 +469,19 @@
                         </div>
                         </div>
                     </div>
-                    <div class="flex space-x-4 text-gray-600 dark:text-white text-[18px] pt-8 pb-5">
-                        <span>&copy; 2024</span>
-                        <a href="" class="hover:underline">Twitter</a>
-                        <a href="https://www.instagram.com/sibatik.cirebon" class="hover:underline">Instagram</a>
-                        <a href="#" class="hover:underline">Email</a>
-                    </div>
+                    
                 </div>
-                <div class="flex-auto pt-8">
-                    <img src="../assets/images/alatbahan.jpg" class="container w-[1310px] h-[600px] bg-slate-600">
-                </div>
-                <div class="flex space-x-4 text-gray-600 text-[18px] pt-8 pb-5">
+                
+                
+                <div class="flex space-x-4 text-gray-600 text-[18px] pt-8 pb-5 dark:text-white">
                     <span>&copy; 2024</span>
-                    <a href="#" class="hover:underline">Twitter</a>
+                    <a href="https://wa.me/62882001102369?" class="hover:underline">Whatsapp</a>
                     <a href="https://www.instagram.com/sibatik.cirebon" class="hover:underline">Instagram</a>
-                    <a href="#" class="hover:underline">Email</a>
+                    <a href="mailto:sibatikpesonacirebon@gmail.com" class="hover:underline">Email</a>
                 </div>
             </div>
         </div>
+        
     </section>
     <script src="../script.js"></script>
 

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" href="../assets/images/logo_sibatik2.png" >
 </head>
-<body class="bg-white dark:bg-colordark overflow-y-scroll">
+<body class="bg-white dark:bg-colordark overflow-x-hidden dark:overflow-x-hidden">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -24,15 +24,16 @@
     <script src="../animated.js"></script>
     <section class="fixed flex-auto top-0 left-0 w-full bg-white dark:bg-colordark shadow-sm z-50">
         <nav class="container mx-auto flex justify-between items-center py-2 md:py-0">
-            <a href="#" class="w-24 h-24">
-                <img src="../assets/images/LogofullSibatik.png" alt="Logo" class="animate-slide-in-left slide-in-left">
+            <a href="../pages/about_page.html" class="w-24 h-24">
+                <img src="../assets/images/LogofullSibatik.png" alt="Logo" class="animate-slide-in-left dark:hidden slide-in-left">
+                <img src="../assets/images/logo dark mode.png" alt="Menu" class="animate-slide-in-left hidden dark:block">
             </a>
             
-            <ul id="menu" class="hidden md:flex space-x-10 ml-auto font-inter animate-slide-in-right dark:text-white">
-                <li ><a class="hover:underline " href="../index.html">Home</a></li>
+            <ul id="menu" class="hidden lg:flex space-x-10 ml-auto font-inter animate-slide-in-right dark:text-white">
+                <li ><a class="hover:underline " href="/index.html">Home</a></li>
                 <li><a href="../pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
                 <li><a href="../pages/alat_bahan_page.html" class="hover:underline">Alat & Bahan</a></li>
-                <li><a class="hover:underline">Inovasi</a></li>
+                <li><a href="../pages/inovasi.html" class="hover:underline">Inovasi & Pelatihan</a></li>
                 <li><a href="../pages/about_page.html" class="hover:underline underline font-bold">About</a></li>
                 
             </ul>
@@ -69,7 +70,7 @@
                       ></path>
                     </svg>
                   </label>
-                  <div class="flex items-center md:hidden">
+                  <div class="flex items-center lg:hidden">
                     <button id="menu-toggle" class="focus:outline-none mr-3">
                         <img src="../assets/images/menu.png" alt="Menu" class="h-6 dark:hidden">
                         <img src="../assets/images/list_16024404.png" alt="Menu" class="h-6 hidden dark:block">
@@ -82,19 +83,19 @@
         
     
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <ul class="flex flex-col space-y-2 p-4 bg-white dark:bg-colordark dark:text-white  shadow-md da ">
-                <li><a class="hover:underline" href="../index.html">Home</a></li>
+        <div id="mobile-menu" class="sticky top-0 hidden lg:hidden z-50">
+            <ul class="flex flex-col space-y-2 p-4 bg-white dark:bg-colordark dark:text-white shadow-md">
+                <li><a class="hover:underline " href="/index.html">Home</a></li>
                 <li><a href="../pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
-                <li><a href="../pages/alat_bahan_page.html" class="hover:underline">Alat & Bahan</a></li>
-                <li><a class="hover:underline">Inovasi</a></li>
-                <li><a href="../pages/about_page.html" class="hover:underline underline font-bold">About</a></li>
+                <li><a href="../pages/alat_bahan_page.html" class="hover:underline  ">Alat & Bahan</a></li>
+                <li><a href="../pages/inovasi.html" class="hover:underline">Inovasi & Pelatihan</a></li>
+                <li><a href="../pages/about_page.html" class="hover:underline font-bold">About</a></li>
             </ul>
         </div>
     </section>
     <script src="../responsive.js"></script>
     <section
-  class="relative bg-[url('../assets/images/About.jpg')] bg-cover bg-center bg-no-repeat font-inter"
+  class="relative bg-[url('../assets/images/About.jpg')] md:bg-cover  bg-center bg-no-repeat font-inter"
 >
   <div
     class="absolute inset-0 bg-gray-900 opacity-50 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
@@ -113,10 +114,10 @@
 
       <div class="mt-8 flex flex-wrap gap-4 text-center">
         <a
-          href="#tujuan"
+          href="#tujuan1"
           class="scroll-link block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
         >
-          Get Started
+          Ayo Mulai!
         </a>
 
         
@@ -125,46 +126,55 @@
   </div>
 </section>
 
-    <div id="tujuan"></div>
+    <div id="tujuan1"></div>
     <div class="flex flex-col items-center mt-80 lg:mt-32 pb-6" data-aos="zoom-in-left">
         <h1 class="text-3xl font-semibold dark:text-white text-center">
             Makna logo SiBatik
         </h1>
     </div>
     
-    <div class="flex flex-col md:flex-row justify-evenly space-y-6 md:space-y-0">
-        <div class="flex flex-col space-y-6" data-aos="zoom-out-right">
-            <div class="flex flex-col md:flex-row items-center md:items-start space-x-4">
-                <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
-                    Huruf besar ini melambangkan kekokohan dan identitas yang kuat sebagai logo website yang berkaitan dengan batik.
-                </p>
-                <img src="../assets/images/sbAbout.png" class="h-32 w-32" alt="">
-            </div>
-            
-            <div class="flex flex-col md:flex-row items-center md:items-start space-x-4">
-                <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
-                    Biru tua Melambangkan stabilitas, kepercayaan, dan profesionalitas. Biru muda Mencerminkan ketenangan, kreativitas, dan semangat untuk melestarikan budaya.
-                </p>
-                <img src="../assets/images/warna.png" class="h-16 w-32 mt-10" alt="">
+    <div class="flex flex-col md:flex-row md:px-4 justify-evenly gap-6 md:gap-10">
+    <!-- Bagian Kiri -->
+    <div class="flex flex-col gap-6" data-aos="zoom-out-right">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+            <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
+                Huruf besar ini melambangkan kekokohan dan identitas yang kuat sebagai logo website yang berkaitan dengan batik.
+            </p>
+            <div class="w-32 h-32 dark:bg-white dark:rounded-full flex-shrink-0">
+                <img src="../assets/images/sbAbout.png" class="w-full h-full object-contain" alt="">
             </div>
         </div>
-    
-        <div class="flex flex-col space-y-6" data-aos="zoom-out-left">
-            <div class="flex flex-col md:flex-row items-center md:items-start space-x-4">
-                <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
-                    Singkatan “SiBatik" merupakan kependekan dari "Sistem Informasi Batik" atau nama yang merepresentasikan teknologi terkait batik.
-                </p>
-                <img src="../assets/images/sibatikabout.png" class="h-32 w-32" alt="">
-            </div>
-            
-            <div class="flex flex-col md:flex-row items-center md:items-start space-x-4">
-                <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
-                    Pola awan terinspirasi dari motif tradisional batik khas Cirebon, yaitu motif Mega Mendung, yang sangat terkenal. Mempunyai makna kemakmuran dan keberlanjutan.
-                </p>
-                <img src="../assets/images/megaMendungAbout.png" class="h-32 w-32" alt="">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+            <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
+                Biru tua Melambangkan stabilitas, kepercayaan, dan profesionalitas. Biru muda Mencerminkan ketenangan, kreativitas, dan semangat untuk melestarikan budaya.
+            </p>
+            <div class="w-32 h-32 dark:bg-white dark:rounded-full flex-shrink-0">
+                <img src="../assets/images/warna.png" class="w-full h-auto object-contain mt-4 md:mt-9" alt="">
             </div>
         </div>
     </div>
+    
+    <!-- Bagian Kanan -->
+    <div class="flex flex-col gap-6" data-aos="zoom-out-left">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+            <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
+                Singkatan “SiBatik" merupakan kependekan dari "Sistem Informasi Batik" atau nama yang merepresentasikan teknologi terkait batik.
+            </p>
+            <div class="w-32 h-32 flex-shrink-0">
+                <img src="../assets/images/sibatikabout.png" class="w-full h-full object-contain" alt="">
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+            <p class="max-w-lg mt-10 text-[18px] text-center md:text-left dark:text-fontdark text-custom">
+                Pola awan terinspirasi dari motif tradisional batik khas Cirebon, yaitu motif Mega Mendung, yang sangat terkenal. Mempunyai makna kemakmuran dan keberlanjutan.
+            </p>
+            <div class="w-32 h-32 flex-shrink-0">
+                <img src="../assets/images/megaMendungAbout.png" class="w-full h-full object-contain" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
     
     <div class="flex flex-col md:flex-row mt-44 items-center justify-evenly space-y-6 md:space-y-0">
         <div data-aos="fade-right" class="flex flex-col items-center md:items-start mr-0 md:mr-32 mt-6 text-center md:text-left">
@@ -186,7 +196,7 @@
                 Kenapa harus batik Cirebon?
             </h1>
             <p class="max-w-2xl mt-2 text-[18px] dark:text-fontdark text-custom">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis qui dolore beatae maiores recusandae repellat adipisci quaerat error, illo hic ipsum similique ducimus consequatur inventore dolorem aut dicta consectetur rerum eum! Quos praesentium eligendi voluptatem nihil architecto mollitia omnis excepturi! Ullam ad soluta velit.
+                Batik Cirebon dipilih karena keunikan dan keindahannya, mengekspresikan kekayaan budaya lokal dengan sentuhan estetika yang tinggi. Motif khas seperti Mega Mendung, Patrang Keris, dan Wadasan mencerminkan filosofi mendalam yang terinspirasi dari alam, kehidupan sehari-hari, dan nilai-nilai spiritual masyarakat Cirebon. Selain itu, batik Cirebon dikenal dengan perpaduan warna-warna cerah yang berani dan harmonis yang mencerminkan pengaruh akulturasi budaya Jawa, Tiongkok, dan Arab, menjadikan setiap kain batik sebagai karya seni yang penuh makna. Pemilihan batik Cirebon  merupakan  apresiasi terhadap kearifan lokal dan upaya melestarikan warisan budaya Indonesia di tengah tantangan modernisasi.
             </p>
         </div>
     </div>
@@ -199,7 +209,7 @@
                 Tujuan utama SiBatik
             </h1>
             <p class="mt-2 text-custom text-[18px] max-w-2xl dark:text-fontdark">
-                Website SIBATIK bertujuan untuk memperkenalkan dan mempromosikan batik Cirebon kepada masyarakat baik di tingkat nasional maupun internasional. Di tingkat nasional, SIBATIK akan memperkenalkan kekayaan budaya batik Cirebon kepada berbagai kalangan, meningkatkan kesadaran akan keberagaman budaya Indonesia, serta mendukung pengembangan industri kreatif lokal.
+                Website SiBatik bertujuan untuk memperkenalkan dan mempromosikan batik Cirebon kepada masyarakat baik di tingkat SiBatik maupun internasional. Di tingkat nasional, SiBatik akan memperkenalkan kekayaan budaya batik Cirebon kepada berbagai kalangan, meningkatkan kesadaran akan keberagaman budaya Indonesia, serta mendukung pengembangan industri kreatif lokal.
             </p>
         </div>
     </div>
@@ -214,95 +224,107 @@
         <img src="../assets/images/partnerkami.png" class=" w-32 h-32 md:w-48 md:h-48" alt="">
     </div>
     </div>
-    <div class=" flex flex-col  md:items-start" data-aos="zoom-out-left">
-        <h1 class="text-lg md:text-xl font-semibold dark:text-white mb-6 ml-[38px]  text-center md:text-left">
-            Contact Us
-        </h1>
-        <div class="flex flex-row justify-center md:justify-start space-x-6 md:space-x-6 ">
-<section class="flex justify-center items-center ">
-    <a href="https://www.instagram.com/sibatik.cirebon">
-<button
-    href="/"
-    class="group flex justify-center p-4 rounded-md drop-shadow-xl from-gray-800 bg-[#a21caf] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1.2em"
-        viewBox="0 0 24 24"
-        stroke-width="1"
-        fill="currentColor"
-        stroke="currentColor"
-        class="w-5">
-    <path
-        d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
-    ></path>
-    </svg>
-    <span
-            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 dark:group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
-        >
-            Instagram
-        </span>
-</button>
-</a>
-</section>
-
-<section class="flex justify-center items-center">
-    <button
-    href="/"
-    class="group flex justify-center p-4 rounded-md drop-shadow-xl from-gray-800 bg-[#25D366] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#075E54] hover:to-[#128C7E]"
-    >
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1.2em"
-        viewBox="0 0 24 24"
-        stroke-width="1"
-        fill="currentColor"
-        stroke="currentColor"
-        class="w-5"
-    >
-        <path
-        d="M12 2C6.48 2 2 6.48 2 12c0 1.63.39 3.16 1.07 4.53L2 22l5.47-1.07C8.84 21.61 10.37 22 12 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18c-1.45 0-2.82-.35-4.03-.98l-.29-.16-3.25.64.62-3.18-.17-.31C4.35 14.83 4 13.46 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.36-5.77c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.56.12-.16.24-.64.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.01-.37-1.92-1.19-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.38.11-.5.11-.11.24-.29.36-.43.12-.14.16-.24.24-.39.08-.16.04-.29-.02-.41-.06-.12-.56-1.34-.77-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.29-.01-.45-.01-.16 0-.41.06-.63.29-.22.24-.83.81-.83 1.97s.85 2.27.97 2.43c.12.16 1.67 2.55 4.04 3.44.56.24.99.38 1.32.49.56.18 1.07.16 1.48.1.45-.06 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.09-.22-.14-.46-.24z"
-        ></path>
-    </svg>
-    <span
-            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 dark:group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
-        >
-            Whatsapp
-        </span>
-    </button>
-</section>
-
-<section class="flex justify-center items-center dark:text-white">
-    <button
-        href="/"
-        class="group flex justify-center p-4 rounded-md drop-shadow-xl from-gray-800 bg-[#1DA1F2] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#15202B] hover:to-[#1C2938]"
-    >
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1.2em"
-            viewBox="0 0 24 24"
-            stroke-width="1"
-            fill="currentColor"
-            stroke="currentColor"
-            class="w-5"
-        >
-            <path
-                d="M22.46 5.5c-.77.34-1.57.57-2.42.67a4.21 4.21 0 001.85-2.32 8.48 8.48 0 01-2.67 1.02 4.2 4.2 0 00-7.17 3.82A11.91 11.91 0 013 4.88a4.2 4.2 0 001.3 5.62 4.19 4.19 0 01-1.9-.52v.05a4.2 4.2 0 003.37 4.12 4.22 4.22 0 01-1.9.07 4.2 4.2 0 003.93 2.92 8.46 8.46 0 01-5.23 1.8c-.34 0-.68-.02-1.02-.06a11.92 11.92 0 006.46 1.89c7.74 0 11.98-6.42 11.98-11.98 0-.18 0-.35-.01-.53A8.56 8.56 0 0024 5.5h-.04z"
-            ></path>
-        </svg>
-        <span
-            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 dark:group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
-        >
-            Twitter
-        </span>
-    </button>
-</section>
-
-
+    <div class="flex flex-col items-center md:items-start" data-aos="zoom-out-left">
+        <div class="flex flex-col items-center space-y-6">
+            <!-- Teks Contact Us -->
+            <h1 class="text-lg md:text-xl font-semibold dark:text-white text-center">
+                Contact Us
+            </h1>
+            
+            <!-- Ikon-Ikon Sosial Media -->
+            <div class="flex flex-row justify-center space-x-6">
+                <!-- Ikon Instagram -->
+                <section class="flex justify-center items-center">
+                    <a href="https://www.instagram.com/sibatik.cirebon">
+                        <button
+                            class="group flex justify-center p-4 rounded-md drop-shadow-xl from-gray-800 bg-[#a21caf] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1.2em"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="w-5"
+                            >
+                                <path
+                                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                                ></path>
+                            </svg>
+                            <span
+                                class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 dark:group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-500 ease-in-out"
+                            >
+                                Instagram
+                            </span>
+                        </button>
+                    </a>
+                </section>
+                <!-- Tambahkan ikon lainnya seperti ini -->
+                <section class="flex justify-center items-center">
+                    <a href="https://wa.me/62882001102369">
+                    <button
+                    href="/"
+                    class="group flex justify-center p-4 rounded-md drop-shadow-xl from-gray-800 bg-[#25D366] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#075E54] hover:to-[#128C7E]"
+                    >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                        stroke-width="1"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        class="w-5"
+                    >
+                        <path
+                        d="M12 2C6.48 2 2 6.48 2 12c0 1.63.39 3.16 1.07 4.53L2 22l5.47-1.07C8.84 21.61 10.37 22 12 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18c-1.45 0-2.82-.35-4.03-.98l-.29-.16-3.25.64.62-3.18-.17-.31C4.35 14.83 4 13.46 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.36-5.77c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.56.12-.16.24-.64.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.01-.37-1.92-1.19-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.38.11-.5.11-.11.24-.29.36-.43.12-.14.16-.24.24-.39.08-.16.04-.29-.02-.41-.06-.12-.56-1.34-.77-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.29-.01-.45-.01-.16 0-.41.06-.63.29-.22.24-.83.81-.83 1.97s.85 2.27.97 2.43c.12.16 1.67 2.55 4.04 3.44.56.24.99.38 1.32.49.56.18 1.07.16 1.48.1.45-.06 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.09-.22-.14-.46-.24z"
+                        ></path>
+                    </svg>
+                    <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 dark:group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
+                        >
+                            Whatsapp
+                        </span>
+                    </button>
+                    </a>
+                </section>
+                <section class="flex justify-center items-center">
+                    <a href="mailto:sibatikpesonacirebon@gmail.com">
+                        <button
+                            class="group flex justify-center p-4 rounded-md drop-shadow-xl bg-[#d50000] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:bg-red-600"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1.2em"
+                                viewBox="0 0 48 48"
+                                fill="currentColor"
+                                class="w-5"
+                            >
+                                <path
+                                    d="M44 13.63v20.74c0 2.21-1.79 4-4 4H8c-2.21 0-4-1.79-4-4V13.63c0-2.21 1.79-4 4-4h32c2.21 0 4 1.79 4 4z"
+                                    fill="#e0e0e0"
+                                />
+                                <path
+                                    d="M24 25.45L4.01 12.91C4.34 11.2 6.02 10 8 10h32c1.98 0 3.66 1.2 3.99 2.91L24 25.45z"
+                                    fill="#fff"
+                                />
+                                <path
+                                    d="M24 29.9l-20-14.16v18.63c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V15.74L24 29.9z"
+                                    fill="#d50000"
+                                />
+                            </svg>
+                            <span
+                                class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 dark:group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
+                            >
+                                Gmail
+                            </span>
+                        </button>
+                    </a>
+                </section>
+            </div>
         </div>
     </div>
+    
 </div>
 
     
@@ -312,5 +334,7 @@
             
         </div>
     </footer>
+    <!-- script menghilangkan animasi -->
+    <script src="../nonAos.js"></script>
 </body>
 </html>

@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./public/**/*.{html,js}',"./node_modules/flowbite/**/*.js"],
+  content: ['./*.{html,js}', './public/**/*.{html,js}'],
 
   theme: {
     extend: {
       fontFamily: { inter: ['Inter'] },
       colors: {
+        tema: '#F2F2F2',
         ring: '#4D4D4D',
         kategori: '#F9F5FF',
         colorpagination: '#5603ad',
@@ -46,7 +47,10 @@ module.exports = {
       }
     },
   },
-  plugins: [
+  plugins: [{
+    autoprefixer: {},
+  },
+    
     function({ addBase }) {
       addBase({
         '*': {

@@ -10,50 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
-        html,
-        body {
-            position: flex;
-            height: 20%;
-        }
     
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-    
-        .swiper {
-            width: 80%; /* Lebar swiper 80% dari lebar layar */
-            height: 50%; /* Tinggi swiper diubah menjadi 547px */
-            margin: auto; /* Agar berada di tengah */
-        }
-    
-        .swiper-wrapper {
-            display: flex;
-        }
-    
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .swiper-slide img {
-            display: auto;
-            width: 50%; /* Gambar memenuhi lebar slide */
-            height: 50%; /* Gambar memenuhi tinggi slide */
-            object-fit: cover; /* Agar gambar tetap proporsional */
-        }
-    </style>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <title>Web SiBatik</title>
+    <title>SiBatik</title>
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="icon" type="image/png" href="./public/assets/images/logo_sibatik2.png" >
 
@@ -73,14 +32,16 @@
     <section class="fixed flex-auto top-0 left-0 w-full bg-white dark:bg-colordark shadow-sm z-50">
         <nav class="container mx-auto flex justify-between items-center py-2 md:py-0">
             <a href="#" class="w-24 h-24">
-                <img src="./public/assets/images/LogofullSibatik.png" alt="Logo" class="animate-slide-in-left slide-in-left">
+                <img src="./public/assets/images/LogofullSibatik.png" alt="Logo" class="animate-slide-in-left dark:hidden slide-in-left">
+                <img src="./public/assets/images/logo dark mode.png" alt="Menu" class="animate-slide-in-left hidden dark:block">
+
             </a>
             
-            <ul id="menu" class="hidden md:flex space-x-10 ml-auto font-inter animate-slide-in-right dark:text-white">
-                <li ><a class="hover:underline underline font-bold" href="./index.html">Home</a></li>
+            <ul id="menu" class="hidden lg:flex space-x-10 ml-auto font-inter animate-slide-in-right dark:text-white">
+                <li ><a href="./index.html" class="hover:underline underline font-bold" >Home</a></li>
                 <li><a href="./public/pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
                 <li><a href="./public/pages/alat_bahan_page.html" class="hover:underline">Alat & Bahan</a></li>
-                <li><a class="hover:underline">Inovasi</a></li>
+                <li><a href="./public/pages/inovasi.html" class="hover:underline">Inovasi & Pelatihan</a></li>
                 <li><a href="./public/pages/about_page.html" class="hover:underline ">About</a></li>
                 
             </ul>
@@ -117,7 +78,7 @@
                       ></path>
                     </svg>
                   </label>
-                  <div class="flex items-center md:hidden">
+                  <div class="flex items-center lg:hidden">
                     <button id="menu-toggle" class="focus:outline-none mr-3">
                         <img src="./public/assets/images/menu.png" alt="Menu" class="h-6 dark:hidden">
                         <img src="./public/assets/images/list_16024404.png" alt="Menu" class="h-6 hidden dark:block">
@@ -129,113 +90,111 @@
         
     
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden lg:hidden">
             <ul class="flex flex-col space-y-2 p-4 bg-white dark:bg-colordark dark:text-white  shadow-md da ">
                 <li><a class="hover:underline underline font-bold" href="./index.html">Home</a></li>
-                <li><a href="./pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
-                <li><a href="./pages/alat_bahan_page.html" class="hover:underline">Alat & Bahan</a></li>
-                <li><a class="hover:underline">Inovasi</a></li>
-                <li><a href="./pages/about_page.html" class="hover:underline ">About</a></li>
+                <li><a href="./public/pages/jenis_batik_page.html" class="hover:underline">Jenis-jenis Batik</a></li>
+                <li><a href="./public/pages/alat_bahan_page.html" class="hover:underline">Alat & Bahan</a></li>
+                <li><a href="./public/pages/inovasi.html" class="hover:underline">Inovasi & Pelatihan</a></li>
+                <li><a href="./public/pages/about_page.html" class="hover:underline ">About</a></li>
             </ul>
         </div>
     </section>
     <script src="./public/responsive.js"></script>
     </section>
-    <div class="flex flex-row justify-between  "  >
-    <article class="relative overflow-hidden  group rounded-lg shadow lg:w-[500px] transition mt-32 hover:shadow-lg dark:shadow-gray-700/25" data-aos="fade-right" >
-        <img
-          alt=""
-          src="./public/assets/images/MegaMendung-upscaler.jpg"
-          class="absolute inset-0 h-full w-full group-hover:scale-105 transition-all duration-300 object-cover"
-        />
-      
-        <div class="relative bg-gradient-to-t from-gray-900/50  to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-          <div class="p-4 sm:p-6">
-            <time datetime="2022-10-10" class="block text-sm text-white/90"> SiBatik • 4 Oct 2024 </time>
-      
-            <a href="./public/content/content_batik_mega_mendung.html">
-              <h3 class="mt-0.5 text-lg text-white font-bold hover:underline">Motif Batik Mega Mendung</h3>
-            </a>
-      
-            <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Motif megamendung merupakan wujud karya yang sangat luhur dan penuh makna, sehingga penggunaan motif  megamendung sebaiknya dijaga dengan baik dan ditempatkan sebagaimana  mestinya. Pernyataan ini tidak bermaksud membatasi bagaimana motif  megamendung diproduksi, tapi lebih kepada ketidaksetujuan penggunaan  motif megamendung untuk barang-barang yang sebenarnya kurang pantas,  seperti misalnya pelapis sandal di hotel-hotel.
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="relative hidden lg:block group overflow-hidden rounded-lg shadow lg:w-[500px] transition mt-32 hover:shadow-lg">
-        <img
-          alt=""
-          src="./public/assets/images/patran-keris-upscaler.jpg"
-          class="absolute inset-0 h-full w-full group-hover:scale-105 transition-all duration-300 object-cover"
-        />
-      
-        <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-          <div class="p-4 sm:p-6">
-            <time datetime="2022-10-10" class="block text-sm text-white/90"> SiBatik • 4 Oct 2024 </time>
-      
-            <a href="./public/content/content_patran_keris.html">
-              <h3 class="mt-0.5 text-lg text-white font-bold hover:underline">Motif Batik Patran Keris</h3>
-            </a>
-      
-            <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Bentuk motif batik Cirebon patran keris adalah motif yang tergolong klasik, namun sering dipesan oleh orang-orang Jepang layaknya motif paksi naga liman yang digunakan sebagai bahan pembuatan kimono.Hal ini juga menjadi bukti bahwa batik Cirebon telah dikenal dan digemari oleh masyarakat internasional.
-            </p>
-          </div>
-        </div>
-      </article>
-      <div>
-      <article class="relative hidden lg:block group overflow-hidden rounded-lg shadow lg:w-[500px] transition mt-32 hover:shadow-lg">
-        <img
-          alt=""
-          src="./public/assets/images/gambar-batik-cirebon-singa-barong-upscaler.jpg"
-          class="absolute inset-0 h-full w-full group-hover:scale-105 transition-all duration-300 object-cover"
-        />
-      
-        <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-          <div class="p-4 sm:p-6">
-            <time datetime="2022-10-10" class="block text-sm text-white/90"> SiBatik • 4 Oct 2024 </time>
-      
+    <div class="flex flex-row lg:space-x-4 md:space-x-4 sm:space-x-0 justify-center">
+        <a href="./public/content/content_batik_mega_mendung.html" class="md:w-1/2 lg:w-full">
+          <article class="relative overflow-hidden group rounded-lg shadow w-full transition mt-32 hover:shadow-lg dark:shadow-gray-700/25" data-aos="fade-right">
+            <img
+              alt=""
+              src="./public/assets/images/MegaMendung-upscaler.jpg"
+              class="absolute inset-0 h-full w-full group-hover:scale-105 transition-all duration-300 object-cover"
+            />
+            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div class="p-4 sm:p-6">
+                <time datetime="2022-10-10" class="block text-sm text-white/90"> SiBatik • 4 Oct 2024 </time>
+                <h3 class="mt-0.5 text-lg text-white font-bold hover:underline">Motif Batik Mega Mendung</h3>
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                  Motif megamendung merupakan wujud karya yang sangat luhur dan penuh makna, sehingga penggunaan motif megamendung sebaiknya dijaga dengan baik dan ditempatkan sebagaimana mestinya.
+                </p>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="./public/content/content_patran_keris.html" class="md:w-1/2">
+          <article class="relative hidden md:block group overflow-hidden rounded-lg shadow w-full transition mt-32 hover:shadow-lg">
+            <img
+              alt=""
+              src="./public/assets/images/patran-keris-upscaler.jpg"
+              class="absolute inset-0 h-full w-full group-hover:scale-105 transition-all duration-300 object-cover"
+            />
+            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div class="p-4 sm:p-6">
+                <time datetime="2022-10-10" class="block text-sm text-white/90"> SiBatik • 4 Oct 2024 </time>
+                <h3 class="mt-0.5 text-lg text-white font-bold hover:underline">Motif Batik Patran Keris</h3>
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                  Bentuk motif batik Cirebon patran keris adalah motif yang tergolong klasik, namun sering dipesan oleh orang-orang Jepang layaknya motif paksi naga liman yang digunakan sebagai bahan pembuatan kimono.
+                </p>
+              </div>
+            </div>
+          </article>
+        </a>
+        <div>
             <a href="../public/content/content_singa_barong.html">
-              <h3 class="mt-0.5 text-lg text-white font-bold hover:underline">Motif Batik Singa Barong</h3>
-            </a>
-      
-            <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Batik Singa Barong adalah salah satu motif batik khas Cirebon yang memiliki nilai historis dan filosofis tinggi, dan berhubungan erat dengan sejarah Kesultanan Cirebon. Motif ini menampilkan sosok Singa Barong, hewan mitologis yang menggambarkan gabungan dari berbagai hewan buas, seperti singa, naga, dan burung garuda. Sosok ini merupakan simbol kekuatan, keberanian, dan perlindungan, mencerminkan kebesaran dan kewibawaan Kesultanan Cirebon pada masa lalu.
-            </p>
+          <article class="relative hidden lg:block group overflow-hidden rounded-lg shadow lg:w-[490px] transition mt-32 hover:shadow-lg">
+            <img
+              alt=""
+              src="./public/assets/images/gambar-batik-cirebon-singa-barong-upscaler.jpg"
+              class="absolute inset-0 h-full w-full group-hover:scale-105 transition-all duration-300 object-cover"
+            />
+          
+            <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div class="p-4 sm:p-6">
+                <time datetime="2022-10-10" class="block text-sm text-white/90"> SiBatik • 4 Oct 2024 </time>
+          
+                
+                  <h3 class="mt-0.5 text-lg text-white font-bold hover:underline">Motif Batik Singa Barong</h3>
+                
+          
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                    Batik Singa Barong adalah salah satu motif batik khas Cirebon yang memiliki nilai historis dan filosofis tinggi, dan berhubungan erat dengan sejarah Kesultanan Cirebon. Motif ini menampilkan sosok Singa Barong, hewan mitologis yang menggambarkan gabungan dari berbagai hewan buas, seperti singa, naga, dan burung garuda. Sosok ini merupakan simbol kekuatan, keberanian, dan perlindungan, mencerminkan kebesaran dan kewibawaan Kesultanan Cirebon pada masa lalu.
+                </p>
+              </div>
+            </div>
+          </article>
+        </a>
           </div>
-        </div>
-      </article>
       </div>
-    </div>
-<script src="./swiper.js"></script>
+      
+
     </section>
     
     <section class="animate-slide-in-left slide-in-left dark:text-white">
-        <div class=" flex flex-col">
-            <h1 class="font-bold text-2xl lg:ml-40  mt-6">
-                Beragam Batik di Cirebon
-            </h1>
-            <div class=" flex flex-col items-center sm:flex-row sm:space-x-16 sm:space-y-0 space-y-5 justify-center">
+        <h1 class="flex font-bold text-2xl lg:ml-40 ml-2 mt-6">
+            Beragam Batik di Cirebon
+        </h1>
+        <div class=" flex flex-col ">
+
+            <div class=" flex flex-wrap justify-center md:justify-between lg:justify-center lg:space-x-10 gap-x-4 gap-y-8 px-4 lg:px-4">
             
-            <div class="group"><a href="./public/content/content_batik_paksi_naga_liman.html">
-                <div class="  pt-7 pb-5 rounded-2xl">
-                    <img src="./public/assets/images/paksi-naga-liman-upscaler.jpg" class="w-[384px] h-[240px] group-hover:scale-105 transition-all duration-300 rounded-2xl">
+            <div class="group "><a href="./public/content/content_batik_paksi_naga_liman.html">
+                <div class="pt-7 pb-5 rounded-2xl">
+                    <img src="./public/assets/images/paksi-naga-liman-upscaler.jpg" class="w-[384px] h-[240px] lg:group-hover:scale-105 transition-all duration-300 rounded-2xl">
                 </div>
-                <div>
-                    <h2 class="text-blue-800 font-inter dark:text-sibatik">SiBatik • 4 Oct 2024</h2>
+                <div class="text-center lg:text-left flex flex-col lg:items-start items-center">
+                    <h2 class="text-blue-800 font-inter  dark:text-sibatik">SiBatik • 4 Oct 2024</h2>
                     <h1 class="font-bold text-[24px] text-base pt-3 pb-2 font-inter hover:underline">Motif Batik Paksi Naga Lima</h1>
-                    <p class="font-inter text-[16px] w-[384px] text-custom dark:text-fontdark">
+                    <p class="font-inter lg:text-[16px] text-[14px] lg:ml-0 ml-3 lg:w-[384px] w-[320px] text-custom dark:text-fontdark">
                         Salah satu tema yang membedakan pada Batik Trusmi Cirebon adalah motif Paksi Naga Liman.
                     </p>
                 </div>
-                <div class="container mt-5 space-x-4">
+                <div class="container mt-5 flex lg:justify-start lg:items-start justify-center items-center space-x-4">
                     <span
-                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Filosofi
                     </span>
                     <span
-                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Makna
                     </span>
                 </div>
@@ -245,20 +204,20 @@
                 <div class=" rounded-2xl pt-7 pb-5" >
                     <img src="./public/assets/images/wadasan.jpg" class="w-[384px] h-[240px] group-hover:scale-105 transition-all duration-300 rounded-2xl">
                 </div>
-                <div>
+                <div class="text-center lg:text-left flex flex-col lg:items-start items-center">
                     <h2 class="text-blue-800 font-inter dark:text-sibatik">SiBatik • 4 Oct 2024</h2>
                     <h1 class="font-bold text-[24px] text-base pt-3 pb-2 font-inter hover:underline">Motif Batik wadasan</h1>
-                    <p class="font-inter text-[16px] w-[384px] text-custom dark:text-fontdark">
+                    <p class="font-inter lg:text-[16px] text-[14px] lg:ml-0 ml-3 lg:w-[384px] w-[320px] text-custom dark:text-fontdark">
                         Batik Wadasan adalah salah satu motif batik khas Cirebon yang memiliki ciri unik
                     </p>
                 </div>
-                <div class="container mt-5 space-x-4">
+                <div class="container mt-5 flex lg:justify-start lg:items-start justify-center items-center space-x-4">
                     <span
-                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Filosofi
                     </span>
                     <span
-                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Makna
                     </span>
                 </div>
@@ -268,46 +227,46 @@
                 <div class=" pt-7 pb-5">
                     <img src="./public/assets/images/gambar-batik-cirebon-sawat-pengantin-1200x675.jpg" class="w-[384px] h-[240px]  group-hover:scale-105 transition-all duration-300 rounded-2xl">
                 </div>
-                <div>
+                <div class="text-center lg:text-left flex flex-col lg:items-start items-center">
                     <h2 class="text-blue-800 font-inter dark:text-sibatik">SiBatik • 4 Oct 2024</h2>
                     <h1 class="font-bold text-[24px] text-base pt-3 pb-2 font-inter hover:underline">Motif Batik Sawat Pengantin</h1>
-                    <p class="font-inter text-[16px] w-[384px] text-custom dark:text-fontdark">
+                    <p class="font-inter lg:text-[16px] text-[14px] lg:ml-0 ml-3 lg:w-[384px] w-[320px] text-custom dark:text-fontdark">
                         Batik Sawat Pengantin adalah salah satu motif batik khas Cirebon yang memiliki makna dan 
                     </p>
                 </div>
-                <div class="container mt-5 space-x-4">
+                <div class="container mt-5 flex lg:justify-start lg:items-start justify-center items-center space-x-4">
                     <span
-                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Filosofi
                     </span>
                     <span
-                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Makna
                     </span>
                 </div>
             </a>
             </div>
         </div>
-        <div class="pt-7 flex flex-col items-center sm:flex-row sm:space-x-16 sm:space-y-0 space-y-5 justify-center ani">
+        <div class="flex flex-wrap justify-center md:justify-between lg:justify-center lg:space-x-10 gap-x-4 gap-y-8 px-4 lg:px-4">
             
             <div class="group"><a href="./public/content/content_ciwaringin_bangau.html">
                 <div class=" pt-7 pb-5">
                     <img src="./public/assets/images/motif-batik-cirebon-ciwaringin-bangau-bergaya-id-1-64d8701208a8b52e351a1553.jpg" class="w-[384px] h-[240px]  group-hover:scale-105 transition-all duration-300 rounded-2xl">
                 </div>
-                <div>
+                <div class="text-center lg:text-left flex flex-col lg:items-start items-center">
                     <h2 class="text-blue-800 font-inter dark:text-sibatik">SiBatik • 4 Oct 2024</h2>
                     <h1 class="font-bold text-[24px] text-base pt-3 pb-2 font-inter hover:underline">Motif Batik Ciwaringin Bangau</h1>
-                    <p class="font-inter text-[16px] w-[384px] text-custom dark:text-fontdark">
+                    <p class="font-inter lg:text-[16px] text-[14px] lg:ml-0 ml-3 lg:w-[384px] w-[320px] text-custom dark:text-fontdark">
                         Batik Ciwaringin Bangau adalah salah satu motif batik khas dari desa Ciwaringin
                     </p>
                 </div>
-                <div class="container mt-5 space-x-4">
+                <div class="container mt-5 flex lg:justify-start lg:items-start justify-center items-center space-x-4">
                     <span
-                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Filosofi
                     </span>
                     <span
-                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Makna
                     </span>
                 </div>
@@ -317,20 +276,20 @@
                 <div class=" pt-7 pb-5">
                     <img src="./public/assets/images/bernath_kawung_rambutan.jpg" class="w-[384px] h-[240px]  group-hover:scale-105 transition-all duration-300 rounded-2xl">
                 </div>
-                <div>
+                <div class="text-center lg:text-left flex flex-col lg:items-start items-center">
                     <h2 class="text-blue-800 font-inter dark:text-sibatik">SiBatik • 4 Oct 2024</h2>
                     <h1 class="font-bold text-[24px] text-base pt-3 pb-2 font-inter hover:underline">Motif Batik Kawung Rambutan </h1>
-                    <p class="font-inter text-[16px] text-custom w-[384px] dark:text-fontdark">
+                    <p class="font-inter lg:text-[16px] text-[14px] lg:ml-0 ml-3 lg:w-[384px] w-[320px] text-custom dark:text-fontdark">
                         Batik Kawung Rambutan adalah salah satu motif batik khas Cirebon yang memadukan
                     </p>
                 </div>
-                <div class="container mt-5 space-x-4">
+                <div class="container mt-5 flex lg:justify-start lg:items-start justify-center items-center space-x-4">
                     <span
-                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Filosofi
                     </span>
                     <span
-                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Makna
                     </span>
                 </div>
@@ -338,22 +297,22 @@
             </div>
             <div class="group"><a href="./public/content/content_pring_sedapur.html">
                 <div class=" pt-7 pb-5">
-                    <img src="./public/assets/images/batik cirebon-motif pring sedapur hitam.jpg" class="w-[384px] h-[240px]  group-hover:scale-105 transition-all duration-300 rounded-2xl">
+                    <img src="./public/assets/images/batik_cirebon-motif_pring_sedapur_hitam-upscaler-transformed.jpeg" class="w-[384px] h-[240px]  group-hover:scale-105 transition-all duration-300 rounded-2xl">
                 </div>
-                <div>
+                <div class="text-center lg:text-left flex flex-col lg:items-start items-center">
                     <h2 class="text-blue-800 font-inter dark:text-sibatik">SiBatik • 4 Oct 2024</h2>
                     <h1 class="font-bold text-[24px] text-base pt-3 pb-2 hover:underline">Motif Batik Pring sedapur</h1>
-                    <p class="font-inter text-[16px] text-custom w-[384px] dark:text-fontdark">
+                    <p class="font-inter lg:text-[16px] text-[14px]  lg:w-[384px] w-[320px] text-custom dark:text-fontdark">
                         Batik Pring Sedapur adalah salah satu motif batik khas Cirebon yang mengangkat tema bambu
                     </p>
-                </div>
-                <div class="container mt-5 space-x-4">
+                </div >
+                <div class="container mt-5 flex lg:justify-start lg:items-start justify-center items-center space-x-4">
                     <span
-                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-purple-100 text-purple-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Filosofi
                     </span>
                     <span
-                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full mt-5">
+                        class="bg-blue-200 text-blue-600 text-xs font-semibold px-4 py-2 rounded-full dark:opacity-80 mt-5">
                         Makna
                     </span>
                 </div>
@@ -361,13 +320,12 @@
             </div>
         </div>
         </div>
-        
     </section>
     <div class="pt-12 px-20 ">
         <div class="flex items-center justify-between border-t border-gray-200 bg-white dark:bg-colordark px-4 py-3 sm:px-6 pt-4">
             <div class="flex flex-1 justify-between sm:hidden">
             <a href="#" class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
-            <a href="../public/pages/slide2Home.html" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
+            <a href="./public/pages/slide2Home.html" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
             </div>
             <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
             <div class="">
@@ -403,12 +361,13 @@
             </div>
             </div>
         </div>
-        <div class="flex space-x-4 text-gray-600 dark:text-white text-[18px] pt-8 pb-5">
+        <div class="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-6 text-gray-600 dark:text-white text-[16px] md:text-[18px] pt-4 md:pt-8 pb-5">
             <span>&copy; 2024</span>
-            <a href="" class="hover:underline">Twitter</a>
+            <a href="https://wa.me/62882001102369?" class="hover:underline">Whatsapp</a>
             <a href="https://www.instagram.com/sibatik.cirebon" class="hover:underline">Instagram</a>
             <a href="#" class="hover:underline">Email</a>
         </div>
+        
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

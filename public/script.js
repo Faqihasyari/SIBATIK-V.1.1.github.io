@@ -4,6 +4,9 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 // Pilih semua elemen konten yang akan difilter
 const filterItems = document.querySelectorAll('.container[data-category]');
 
+// Pilih elemen yang tidak ingin difilter (contoh: h1 tertentu)
+const nonFilterItem = document.querySelector('.no-filter');
+
 // Tambahkan event listener untuk setiap tombol filter
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -18,6 +21,11 @@ filterButtons.forEach(button => {
                 item.style.display = 'none'; // Sembunyikan elemen lain
             }
         });
+
+        // Pastikan elemen yang tidak ingin difilter tetap terlihat
+        if (nonFilterItem) {
+            nonFilterItem.style.display = ''; // Reset display untuk elemen yang tidak difilter
+        }
 
         // Update kelas tombol yang sedang aktif
         filterButtons.forEach(btn => btn.classList.remove('font-bold', 'underline'));

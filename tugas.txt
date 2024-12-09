@@ -1,8 +1,5 @@
-*Membuat slide kedua dari jenis-jenis batik, alat dan baha, dan homepage
-*membuat dark Mode
-*responsive
-*inovasi page
-*detail penjelasan dari setiap konten
+-membuat logo agar bisa dipencet
+-membuat responsive di bagian inovasi 
 ////
 <div class="flex justify-center" >
             <img src="../assets/images/contoh about-unsplash.jpg" class="w-[1216px] h-[556px] object-cover">
